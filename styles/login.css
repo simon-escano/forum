@@ -1,0 +1,73 @@
+#login-box {
+    flex: 1;
+    flex-direction: column;
+    gap: 24px;
+    padding: 80px;
+    max-width: 500px;
+    border-radius: 24px;
+    background-color: var(--primary);
+    box-shadow: var(--shadow-big);
+    margin: 16px;
+} #login-box > * {
+    width: 100%;
+    gap: 10px;
+}
+
+#login-hdg {
+    flex-direction: column;
+    gap: 0px;
+} #login-hdg > h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#login-opts {
+    outline: 2px solid var(--neutral-light);
+    border-radius: 12px;
+    gap: 0;
+} .login-opt {
+    flex: 1;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 16px 32px;
+    background-color: transparent;
+}
+
+#login-error-msg, #login-success-msg {
+    display: none;
+    width: auto;
+    opacity: 0.75;
+    font-size: 14px;
+    padding: 4px 12px;
+    border-radius: 8px;
+    user-select: none;
+} #login-error-msg {
+    color: rgb(255, 54, 104);
+    background-color: rgba(255, 54, 104, 0.15);
+} #login-success-msg {
+    color: rgb(32, 153, 72);
+    background-color: rgba(54, 255, 121, 0.15);
+}
+
+#login-inp {
+    flex-direction: column;
+} #login-inp > div{
+    width: 100%;
+} .form-floating > .form-control {
+    border-radius: 12px;
+    border: 2px solid var(--secondary-verylight);
+} .form-floating > .form-control:focus {
+    background-color: var(--secondary-verylight);
+}
+
+#login-inp > button { padding: 16px 32px }
+
+#no-acct {
+    font-size: 14px;
+    transition: all 0.15s;
+    cursor: pointer;
+    margin-bottom: 0;
+} #no-acct:hover {
+    color: var(--secondary-light);
+}

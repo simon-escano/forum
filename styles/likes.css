@@ -1,0 +1,14 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#posts {
+    justify-content: center;
+    padding-top: 0px;
+}
+
+.post {
+    max-width: 400px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - Liked posts</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/root.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/likes.css">
+    <link rel="icon" href="images/icons/website-icon.svg">
+</head>
+<body>
+    <header class="flex" id="header">
+        <section class="flex" id="left">
+            <img src="images/icons/logo.svg" id="logo" alt="logo">
+        </section>
+        <section class="flex" id="middle">
+            <div>
+                <input type="text" id="search-box" placeholder="Search liked posts">
+                <button id="search-btn" class="btn-gradient flex">
+                    <img src="images/icons/search.svg" alt="search">
+                    Search
+                </button>
+            </div>
+        </section>
+        <section class="flex" id="right">
+            <button id="username"></button>
+            <button id="logout-btn" class="btn-gradient">LOG OUT</button>
+        </section>
+    </header>
+    <nav class="flex" id="navbar">
+        <button id="newpost-btn" class="btn-gradient">Create a post</button>
+        <hr>
+        <section class="flex">
+            <button id="home-btn" class="flex btn">
+                <img src="images/icons/comment.svg" alt="All posts">
+                All posts
+            </button>
+            <button id="likes-btn" class="flex btn nav-btn-active">
+                <img src="images/icons/like.svg" alt="All posts">
+                Liked posts
+            </button>
+        </section>
+    </nav>
+    <main id="main">
+        <p id="no-likes">No liked posts</p>
+        <section class="flex" id="posts"></section>
+    </main>
+    <div id="postview-box"></div>
+    <div id="newpost-box" class="flex">
+        <p>
+            Create post
+            <button class="close-btn flex" id="close-newpost-btn"><img src="images/icons/x.svg"></button>
+        </p>
+        <div class="flex">
+            <p>posting as <span id="posting-as"></span></p>
+            <div class="flex">
+                <textarea id="newpost-inp" placeholder="Say something..."></textarea>
+                <button id="post-btn" class="btn-gradient">Post</button>
+            </div>
+        </div>
+    </div>
+    <div id="loading-box">
+        <div id="loading-bar"></div>
+    </div>
+    <div id="blank-area"></div>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/shared.js"></script>
+    <script src="scripts/likes.js"></script>
+</body>
+</html>
