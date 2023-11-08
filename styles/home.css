@@ -128,12 +128,15 @@ main {
 } #postview-info {
     width: 100%;
     justify-content: space-between;
+    gap: 20px;
     font-size: 20px;
 } #postview-user {
     padding: 4px 12px;
     border-radius: 8px;
     font-size: 20px;
     font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: var(--secondary-dark);
     background-color: var(--secondary-verylight);
 } #postview-date {
